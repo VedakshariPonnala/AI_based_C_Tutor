@@ -1,0 +1,56 @@
+from google import genai
+import os
+
+api_key = os.environ["GEMINI_API_KEY"]
+
+client = genai.Client(api_key=api_key)
+
+response = client.models.generate_content(
+    model="gemini-3.6-flash",
+    contents="Explain what a variable is in C in simple words."
+)
+
+print(response.text)
+V1  ✅ Connect Python → Gemini
+
+V2  ← YOU ARE HERE
+     C Tutor personality
+
+V3
+     /explain
+     /quiz
+     /debug
+     /practice
+
+V4
+     Conversation memory
+
+V5
+     C code debugging
+
+V6
+     Generate coding exercises
+     + evaluate answers
+
+V7
+     Upload your C notes/PDF
+     ↓
+     Tutor answers from your material
+     ↓
+     RAG
+
+V8
+     Web interface
+     ↓
+     HTML/CSS/JS + Python backend
+
+V9
+     User accounts
+     progress tracking
+     quiz scores
+
+V10
+     Voice interaction
+
+V11
+     AI agent capabilities
